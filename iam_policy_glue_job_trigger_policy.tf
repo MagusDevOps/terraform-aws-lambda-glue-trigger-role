@@ -1,6 +1,6 @@
 data "aws_iam_policy_document" "glue_job_trigger_policy_document" {
   statement {
-    sid = "glue-job-trigger"
+    sid = "glueJobTrigger"
 
     actions = ["glue:StartJobRun"]
   }
