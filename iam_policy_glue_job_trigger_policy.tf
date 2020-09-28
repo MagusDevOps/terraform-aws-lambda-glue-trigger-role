@@ -2,7 +2,10 @@ data "aws_iam_policy_document" "glue_job_trigger_policy_document" {
   statement {
     sid = "glueJobTrigger"
 
-    actions = ["glue:StartJobRun"]
+    actions = [
+      "glue:GetJobRun",
+      "glue:StartJobRun",
+    ]
 
     resources = ["*"]
   }
